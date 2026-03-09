@@ -498,7 +498,7 @@ def objective_function(payload):
         # Solver setup and solution
         opti.solver("ipopt",
                     {
-                        "print_time": True,
+                        "print_time": False,
                         "ipopt": {
                             "print_level": 0,
                             "sb": "yes",

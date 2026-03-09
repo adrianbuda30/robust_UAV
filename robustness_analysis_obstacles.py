@@ -12,7 +12,7 @@ from scipy.linalg import solve_continuous_are, solve_discrete_are
 from scipy.interpolate import interp1d
 
 
-TRAJ_FILE = "/results/results_cma_es_pop_32_gen_100_obstacles_0/run_01330_SUCCESS_S0.5000_C0.1162_X0.0544.npz"
+TRAJ_FILE = "./results/results_cma_es_pop_32_gen_100_obstacles_0/run_01330_SUCCESS_S0.5000_C0.1162_X0.0544.npz"
 
 def load_reference_traj(traj_file=TRAJ_FILE):
     if os.path.exists(traj_file):
@@ -339,10 +339,6 @@ dt_sim = 0.02
 Q = np.diag([10, 10, 10, 1000, 1000, 1000, 100, 100, 100, 1000, 1000, 1000])
 R = np.diag([0.1, 0.1, 0.1, 0.1])
 
-
-K_schedule, t_schedule = precompute_interpolated_gains(
-    X_interp, U_interp, total_time, dt_sim, A_f, B_f, Q, R
-)
 
 for i in range(num_evals):
 

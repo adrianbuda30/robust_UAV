@@ -4,9 +4,7 @@ from scipy.integrate import solve_ivp
 from casadi import *
 import numpy as np
 from scipy.spatial.transform import Slerp
-from matplotlib import pyplot as plt
 from aerodynamic_model import compute_totals_coeffs_ca, build_coeffs_function
-
 
 # Rotation functions
 def angle_to_quaternion(yaw, pitch, roll):
