@@ -36,7 +36,7 @@ Co-design optimisation of autonomous systems has emerged as a powerful alternati
 
 1. **Run the <i>nominal</i> and <i>robust</i> co-design optimisation on the three tasks:**
    
-   * **Obstacle Avoidance** - Navigates through 2 cylindrical obstacles without collisions.
+   * **Obstacle Avoidance** - Navigates through two cylindrical obstacles without collisions.
      * [codesign_nominal_obstacles.py](./codesign_nominal_obstacles.py)
      * [codesign_robust_obstacles.py](./codesign_robust_obstacles.py) 
    
@@ -48,7 +48,7 @@ Co-design optimisation of autonomous systems has emerged as a powerful alternati
      * [codesign_nominal_horizontalhairpin.py](./codesign_nominal_horizontalhairpin.py)
      * [codesign_robust_horizontalhairpin.py](./codesign_robust_horizontalhairpin.py)
 
-> **Note:** The level of parametric uncertainty (*sigma_des*) and wind disturbances (*w_gust*) for the robust scenarios can be selected within the scripts (tested up to 10% for *sigma_des*).
+> **Note:** The level of parametric uncertainty (*sigma_des*) and wind disturbances (*w_gust*) for the robust scenarios can be selected within the scripts (tested for up to 10% *sigma_des*).
 
 We run our co-design optimisation on an Intel Icelake Xeon Platinum 8358 machine, with the CMA-ES search parallelised across 32 CPU cores. The optimisation takes an average of ∼27.4 hours to converge, and evaluates 3200 or 4800 design candidates depending on the task. 
 
@@ -69,10 +69,14 @@ We run our co-design optimisation on an Intel Icelake Xeon Platinum 8358 machine
      * [postprocess_obstacles.py](./postprocess/postprocess_obstacles.py)
      * [postprocess_verticalreversal.py](./postprocess/postprocess_verticalreversal.py)
      * [postprocess_horizontalhairpin.py](./postprocess/postprocess_horizontalhairpin.py)
+  
+<p align="center">
+  <img src="./postprocess/diagram.png" width="100%">
+</p>
 
 ### Citation
 
-This work has been submitted to the  **2026 International Conference on Unmanned Aircraft Systems (ICUAS 2026)** and is currently under review. Please cite:
+This work has been submitted to the  **2026 International Conference on Unmanned Aircraft Systems (ICUAS)** and is currently under review. Please cite:
 
 ```bibtex
 @inproceedings{budarobustUAV,
