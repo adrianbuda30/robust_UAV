@@ -39,4 +39,3 @@ dependencies:
       - scipy==1.15.3
       - six==1.17.0
       - tzdata==2025.3
-prefix: /Users/adrianbuda/anaconda3/envs/robust_codesign

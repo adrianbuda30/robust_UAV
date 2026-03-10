@@ -551,7 +551,7 @@ def objective_function(payload):
 
         for i in range(num_evals):
 
-            sigma_des = 0.025
+            sigma_des = 0.1
             semispan_noisy = semispan + sigma_des * semispan * rng.standard_normal()
             chord_noisy = chord + sigma_des * chord * rng.standard_normal()
             x_wing_noisy = x_wing + sigma_des * x_wing * rng.standard_normal()

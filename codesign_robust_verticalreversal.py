@@ -556,7 +556,7 @@ def objective_function(payload):
 
         for i in range(num_evals):
 
-            sigma_des = 0.025
+            sigma_des = 0.1
             semispan_noisy = semispan + sigma_des * semispan * rng.standard_normal()
             chord_noisy = chord + sigma_des * chord * rng.standard_normal()
             x_wing_noisy = x_wing + sigma_des * x_wing * rng.standard_normal()
@@ -669,7 +669,6 @@ def objective_function(payload):
                 v_ref_mag = np.linalg.norm(x_ref[0:3])
                 w_gust = get_von_karman_disturbances(sim_time, v_ref_mag, seed=i)
                 v_wind_inertial = np.array(w_gust)
-
 
                 def get_wind_relative_xdot(x_in, u_in):
                     v_wind_body = np.array(inertial_to_body(v_wind_inertial, x_in[3:7])).flatten()

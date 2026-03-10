@@ -446,8 +446,7 @@ for i in range(num_evals):
 
             v_ref_mag = np.linalg.norm(x_ref[0:3])
             w_gust = get_von_karman_disturbances(sim_time, v_ref_mag, seed=i)
-            v_wind_inertial = np.array([0, 0, 0])
-
+            np.array(w_gust)
 
             def get_wind_relative_xdot(x_in, u_in):
                 v_wind_body = np.array(inertial_to_body(v_wind_inertial, x_in[3:7])).flatten()
