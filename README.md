@@ -76,16 +76,20 @@ We run our co-design optimisation on an Intel Icelake Xeon Platinum 8358 machine
 
 ### Citation
 
-This work has been submitted to the  **2026 International Conference on Unmanned Aircraft Systems (ICUAS)** and is currently under review. Please cite:
+This work has been published in the *2026 International Conference on Unmanned Aircraft Systems (ICUAS)*, 2026.
+[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11598704) ·
+[arXiv](https://arxiv.org/abs/2603.11130) ·
+DOI: [10.1109/ICUAS69441.2026.11598704](https://doi.org/10.1109/ICUAS69441.2026.11598704). Please cite:
 
 ```bibtex
-@inproceedings{budarobustUAV,
-  title={Robust Co-design Optimisation for Agile Fixed-Wing UAVs},
-  author={Buda, Adrian Andrei and Chen, Xavier and Botteghi, Nicol\'o, and Fasel, Urban},
-  booktitle={2026 International Conference on Unmanned Aircraft Systems (ICUAS)},
-  year={2026},
-  note={Under review},
-  url={[https://github.com/adrianbuda30/robust_UAV](https://github.com/adrianbuda30/robust_UAV)}
+@inproceedings{buda2026robust,
+  title     = {Robust Co-design Optimisation for Agile Fixed-Wing UAVs},
+  author    = {Buda, Adrian Andrei and Chen, Xavier and Botteghi, Nicol\`o and Fasel, Urban},
+  booktitle = {2026 International Conference on Unmanned Aircraft Systems (ICUAS)},
+  year      = {2026},
+  pages     = {9--17},
+  doi       = {10.1109/ICUAS69441.2026.11598704},
+  publisher = {IEEE}
 }
 ```
    
